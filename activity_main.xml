@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="28dp">
+
+        <TextView
+            android:id="@+id/textview_restaurentname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="The Indian Flavours"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="25sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_starters"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_restaurentname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/asnim_ansari_sqymtdqymjo_unsplash"/>
+                <TextView
+                    android:id="@+id/textview_starters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starters"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:layout_margin="7dp"
+                    android:fontFamily="sans-serif-medium"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_maincourse"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview_starters"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lily_banse__yhswy6uqvk_unsplash"/>
+                <TextView
+                    android:id="@+id/textview_maincourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maincourse"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:layout_margin="7dp"
+                    android:fontFamily="sans-serif-medium"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
